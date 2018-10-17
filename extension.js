@@ -119,7 +119,7 @@ class RPC extends Client {
             data = {
                 details,
                 state,
-                startTimestamp: Date.now() / 1000,
+                startTimestamp: Date.now(),
                 largeImageKey: lang.key,
                 largeImageText: config.get("largeImage").replace("{language}", lang.title),
                 smallImageKey: "vsc",
@@ -134,7 +134,7 @@ class RPC extends Client {
             data = {
                 details,
                 state,
-                startTimestamp: Date.now() / 1000,
+                startTimestamp: Date.now(),
                 largeImageKey: "vsc-large",
                 largeImageText: config.get("largeImageIdle"),
                 smallImageKey: "vsc",
